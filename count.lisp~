@@ -1,1 +1,0 @@
-(loop for i from 1 to 1000000 when (= 0 (mod 2 i)) do (format t "~%~d" i))

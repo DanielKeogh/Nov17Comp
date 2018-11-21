@@ -37,12 +37,13 @@
 
 		(loop for i from 0 to 99
 			 when (not (aref board i))
-			 do (let* ((s (groupby:groupby (lambda (n) n)
-																		 (remove-if-not
-																			(lambda (p)
-																				(and (< (- i 6) (car p))
-																						 (> i (car p))))
-																			jumps)))
+			 do (let* ((q (remove-if-not
+										 (lambda (p)
+											 (and ;(<= (- i 6) (car p))
+														;(> i (car p))
+														(= (cadr p) i)))
+										 jumps))
+								 (s q)
 								 (biggest-count 0)
 								 (num 0))
 						
@@ -53,5 +54,7 @@
 										(setf biggest-count cnt)
 										(setf num n)))
 
+		(print jumps)
+		(print q)
 						(setf (aref board i) num)))
 		(print-board board)))
