@@ -1,9 +1,1 @@
-# Nov17Comp
-### _Your Name <your.name@example.com>_
-
-This is a project to do ... something.
-
-## License
-
-Specify license here
-
+Code for some programming meetup in Sydney, notably, a function that figures out where the snakes and ladders are on a snakes and ladders board using only the position history of players determined by die roll.
