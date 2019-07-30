@@ -1,1 +1,1 @@
-Code for some programming meetup in Sydney, notably, a function that figures out where the snakes and ladders are on a snakes and ladders board using only the position history of players determined by die roll.
+Code for some programming meetup in Sydney. Notably, a function that figures out where the snakes and ladders are on a snakes and ladders board using only the position history of players determined by die roll.
